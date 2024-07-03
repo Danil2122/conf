@@ -2,7 +2,7 @@ spring:
   application:
     name: orc-calc-period-adapter
 kafka:
-  bootstrap-servers: 172.24.150.64:9091
+  bootstrap-servers: 172.24.150.64:9092
   max-retries: 3
   max-poll-interval-ms: 30000
   consumer:
