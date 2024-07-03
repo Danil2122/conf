@@ -1,0 +1,18 @@
+kafka:
+  bootstrap-servers: 172.24.150.64:9092
+  max-retries: 3
+  max-poll-interval-ms: 30000
+  consumer:
+    group-id: orc-service-calc
+    concurrency: 10
+    max-poll-records: 250
+  producer:
+    properties:
+      max.request.size: 10485760
+
+application:
+  name: calc-period-adapter
+  topic-error: orc-calc-period-adapter-error
+  topic-in: orc-calc-period-adapter-in
+  topic-out: orc-calc-topic-in
+  calc-period-url: http://localhost:9001/orc-mock/api/calc
