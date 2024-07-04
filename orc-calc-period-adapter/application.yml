@@ -19,6 +19,5 @@ application:
   topic-in: orc-calc-period-adapter-in
   topic-out: orc-calc-topic-in
   calc-period-url: http://localhost:9001/orc-mock/api/calc
-  ka:
-    da: ghjjhjnd
-    ka: 12
+  da: ghjjhjnd
+  ka: 12
